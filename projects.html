@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects – Dhruvil Katharotiya</title>
+  <meta name="description" content="Research and software projects by Dhruvil Katharotiya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js"></script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html">Dhruvil Katharotiya</a>
+      <nav class="main">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="cv.html">CV</a>
+        <button class="theme-btn" aria-label="Toggle dark mode">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>Projects</h1>
+    <p class="tagline">Research and engineering work from my Master's at THI, plus personal projects.</p>
+
+    <!-- THESIS -->
+    <article class="project" id="thesis">
+      <div class="figure">
+        <svg viewBox="0 0 640 240" aria-hidden="true">
+          <rect x="60" y="196" width="520" height="8" rx="4" fill="var(--line)"/>
+          <rect x="130" y="172" width="70" height="24" rx="4" fill="var(--accent)"/>
+          <path d="M165 172 L215 90 L330 70 L385 128" stroke="var(--accent)" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="215" cy="90" r="12" fill="var(--surface)" stroke="var(--accent)" stroke-width="6"/>
+          <circle cx="330" cy="70" r="12" fill="var(--surface)" stroke="var(--accent)" stroke-width="6"/>
+          <path d="M372 146 l13 -16 l13 16" stroke="var(--accent)" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <rect x="365" y="160" width="60" height="36" rx="4" fill="var(--muted)" opacity=".5"/>
+          <path d="M215 60 Q330 0 470 90" stroke="var(--muted)" stroke-width="2.5" stroke-dasharray="7 7" fill="none"/>
+          <rect x="450" y="160" width="80" height="36" rx="4" fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="6 5"/>
+        </svg>
+      </div>
+      <h2 style="margin-top:0">Task-aware Grasp Selection and Path Planning for KUKA LBR iiwa Cobots</h2>
+      <p class="meta">Master's thesis · Technische Hochschule Ingolstadt · ongoing</p>
+      <!-- TODO: replace with 2–3 sentences from you once you're happy to share details -->
+      <p>A robot should grasp an object in a way that fits what it has to do next. A mug picked up to be poured needs a different grasp than one picked up to be stacked. My thesis studies how to choose grasps with the downstream task in mind and how to plan collision-free motions for the KUKA LBR iiwa 7-DoF collaborative arm.</p>
+      <div class="tags"><span>Robot manipulation</span><span>Grasp planning</span><span>Motion planning</span><span>KUKA LBR iiwa</span></div>
+    </article>
+
+    <!-- MASTER'S PROJECT -->
+    <article class="project" id="evasive">
+      <div class="figure">
+        <svg viewBox="0 0 640 240" aria-hidden="true">
+          <rect x="0" y="50" width="640" height="140" fill="var(--line)" opacity=".55"/>
+          <line x1="0" y1="120" x2="640" y2="120" stroke="var(--surface)" stroke-width="4" stroke-dasharray="22 16"/>
+          <path d="M60 155 C230 155 270 85 440 85 L600 85" stroke="var(--accent)" stroke-width="4" fill="none" stroke-dasharray="9 7"/>
+          <rect x="34" y="141" width="56" height="28" rx="6" fill="var(--accent)"/>
+          <rect x="320" y="141" width="56" height="28" rx="6" fill="var(--muted)"/>
+          <rect x="540" y="71" width="56" height="28" rx="6" fill="var(--accent)" opacity=".35"/>
+          <text x="34" y="214" font-size="15" fill="var(--muted)" font-family="Inter, sans-serif">ego vehicle → cubic-spline lane change around a slower vehicle</text>
+        </svg>
+      </div>
+      <h2 style="margin-top:0">Local Planning and Evaluation of Evasive Maneuvers for Automated Vehicles</h2>
+      <p class="meta">Master's project · THI · 2024 · team of four</p>
+      <p>A local planner has to make short-term, real-time decisions so an automated vehicle avoids collisions while staying smooth and following traffic rules. We built a Python simulation that decides <em>when</em> the ego vehicle should change lanes and generates a smooth trajectory for doing it.</p>
+      <ul>
+        <li>Scenario-based collision detection and lane-change logic using relative positions, velocities and safety distances; validated across 50+ simulated traffic scenarios.</li>
+        <li>Smooth lane-change trajectories using cubic-spline interpolation, with a sigmoid-based variant compared against it. Smoothness was the main challenge.</li>
+        <li>Trained Polynomial Regression and Decision Tree models to predict vehicle positions and explain maneuver decisions, and analysed their sensitivity across 30–130 km/h.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>NumPy / SciPy</span><span>Path planning</span><span>Collision avoidance</span><span>scikit-learn</span></div>
+    </article>
+
+    <!-- SEMINAR -->
+    <article class="project" id="eco-driving">
+      <div class="figure">
+        <svg viewBox="0 0 640 240" aria-hidden="true">
+          <line x1="40" y1="200" x2="600" y2="200" stroke="var(--line)" stroke-width="3"/>
+          <line x1="40" y1="200" x2="40" y2="30" stroke="var(--line)" stroke-width="3"/>
+          <path d="M40 80 L200 80 L250 175 L300 175 L350 80 L520 80" stroke="var(--muted)" stroke-width="3" fill="none" opacity=".7"/>
+          <path d="M40 80 C180 80 230 115 300 115 C370 115 420 80 520 80" stroke="var(--accent)" stroke-width="4" fill="none"/>
+          <rect x="530" y="48" width="34" height="90" rx="8" fill="var(--text)" opacity=".85"/>
+          <circle cx="547" cy="70" r="10" fill="#d9534f"/>
+          <circle cx="547" cy="93" r="10" fill="#f0ad4e" opacity=".35"/>
+          <circle cx="547" cy="116" r="10" fill="#5cb85c" opacity=".35"/>
+          <text x="60" y="226" font-size="15" fill="var(--muted)" font-family="Inter, sans-serif">speed approaching a signal: stop-and-go (grey) vs. eco-driving (blue)</text>
+        </svg>
+      </div>
+      <h2 style="margin-top:0">Eco-Driving at Signalized Intersections</h2>
+      <p class="meta">Scientific seminar · THI · 2024 · supervised by Anna Lena Schlamp</p>
+      <!-- NOTE: worded as a literature review. If you ran your own simulations, tell me and I'll rewrite this with your results. -->
+      <p>A literature review of how vehicles can approach traffic lights more efficiently. The idea is to anticipate signal changes, keep speed steady, and avoid unnecessary stops to save fuel and cut emissions.</p>
+      <ul>
+        <li>Compared computational approaches: Dynamic Programming, Model Predictive Control, Gaussian Process Regression and Soft Actor-Critic reinforcement learning.</li>
+        <li>Examined integrated evaluation setups that couple traffic, V2X network and driving simulators, and predictive cruise control (Eco-PPCC).</li>
+        <li>Discussed what holds these methods back in the real world, especially without vehicle-to-infrastructure (V2I) communication.</li>
+      </ul>
+      <div class="tags"><span>Reinforcement learning (SAC)</span><span>Gaussian processes</span><span>MPC</span><span>Connected vehicles</span></div>
+    </article>
+
+    <!-- FLASH CARDS -->
+    <article class="project" id="flashcards">
+      <div class="figure">
+        <svg viewBox="0 0 640 240" aria-hidden="true">
+          <rect x="230" y="62" width="200" height="124" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="2" transform="rotate(-8 330 124)"/>
+          <rect x="230" y="58" width="200" height="124" rx="10" fill="var(--surface)" stroke="var(--line)" stroke-width="2" transform="rotate(-3 330 120)"/>
+          <rect x="240" y="56" width="200" height="124" rx="10" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/>
+          <rect x="262" y="84" width="120" height="10" rx="5" fill="var(--accent)"/>
+          <rect x="262" y="106" width="156" height="8" rx="4" fill="var(--line)"/>
+          <rect x="262" y="124" width="132" height="8" rx="4" fill="var(--line)"/>
+          <rect x="262" y="150" width="56" height="16" rx="8" fill="var(--accent-soft)"/>
+        </svg>
+      </div>
+      <h2 style="margin-top:0">Flash Card Trainer</h2>
+      <p class="meta">Personal project</p>
+      <p>An adaptive learning web app with spaced repetition. Cards you struggle with come back sooner.</p>
+      <ul>
+        <li>Flask backend with user accounts, progress tracking and spaced-repetition scheduling.</li>
+        <li>Containerised with Docker; automated testing and deployment through GitLab CI/CD.</li>
+      </ul>
+      <!-- TODO: add "Code" / "Live demo" links if the repo is public -->
+      <div class="tags"><span>Python</span><span>Flask</span><span>Docker</span><span>GitLab CI/CD</span></div>
+    </article>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Dhruvil Katharotiya · Ingolstadt, Germany</span>
+      <span><a href="mailto:dhruvilkatharotiya01@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/dhruvil-kathrotiya" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </footer>
+</body>
+</html>

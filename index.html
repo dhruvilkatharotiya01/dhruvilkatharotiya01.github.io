@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dhruvil Katharotiya</title>
+  <meta name="description" content="Dhruvil Katharotiya – M.Sc. AI Engineering of Autonomous Systems (THI). Reinforcement learning, trajectory planning and robot manipulation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js"></script>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="index.html">Dhruvil Katharotiya</a>
+      <nav class="main">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+        <button class="theme-btn" aria-label="Toggle dark mode">☾</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <!-- TODO: replace this div with <img class="photo" src="photo.jpg" alt="Dhruvil Katharotiya"> -->
+      <div class="photo" role="img" aria-label="Photo placeholder">DK</div>
+      <div>
+        <h1>Hi, I'm Dhruvil.</h1>
+        <p class="tagline">M.Sc. student in AI Engineering of Autonomous Systems at Technische Hochschule Ingolstadt, Germany.</p>
+        <span class="status">Open to roles in AI/ML &amp; robotics</span>
+        <p>I work where machine learning meets autonomous systems: reinforcement learning, trajectory prediction and motion planning for vehicles and robots. My Master's thesis looks at <strong>task-aware grasp selection and path planning for KUKA LBR iiwa collaborative robots</strong>.</p>
+        <p>Before moving to Germany I spent two years as a software developer, building React frontends and Python backends. Alongside my studies I've worked as a working student at PVS Europe in Munich, on process validation for enterprise workflows. I like turning research ideas into software that runs reliably.</p>
+        <div class="links">
+          <a class="btn primary" href="cv.html">View CV</a>
+          <a class="btn" href="mailto:dhruvilkatharotiya01@gmail.com">
+            <svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm2 2v.5l8 5 8-5V7H4zm16 2.8-8 5-8-5V17h16V9.8z"/></svg>Email</a>
+          <a class="btn" href="https://www.linkedin.com/in/dhruvil-kathrotiya" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4V9.5z"/></svg>LinkedIn</a>
+          <!-- TODO: add GitHub / Google Scholar once you send the links
+          <a class="btn" href="https://github.com/USERNAME" target="_blank" rel="noopener">GitHub</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <h2>Research interests</h2>
+    <ul class="chips">
+      <li>Reinforcement learning</li>
+      <li>Trajectory prediction</li>
+      <li>Motion &amp; path planning</li>
+      <li>Robot grasping &amp; manipulation</li>
+      <li>Autonomous driving</li>
+      <li>Simulation-based testing</li>
+    </ul>
+
+    <h2>Selected projects</h2>
+    <div class="grid">
+      <a class="card" href="projects.html#thesis" style="color:inherit;text-decoration:none">
+        <div class="thumb">
+          <svg viewBox="0 0 320 160" aria-hidden="true">
+            <rect x="40" y="128" width="240" height="6" rx="3" fill="var(--line)"/>
+            <rect x="70" y="112" width="40" height="16" rx="3" fill="var(--accent)"/>
+            <path d="M90 112 L120 62 L185 50 L215 82" stroke="var(--accent)" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="120" cy="62" r="8" fill="var(--surface)" stroke="var(--accent)" stroke-width="4"/>
+            <circle cx="185" cy="50" r="8" fill="var(--surface)" stroke="var(--accent)" stroke-width="4"/>
+            <path d="M207 92 l8 -10 l8 10 M215 82 v4" stroke="var(--accent)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <rect x="200" y="104" width="34" height="24" rx="3" fill="var(--muted)" opacity=".5"/>
+            <path d="M120 40 Q180 10 240 60" stroke="var(--muted)" stroke-width="2" stroke-dasharray="5 5" fill="none"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="meta">Master's thesis · ongoing</div>
+          <h3>Task-aware Grasp Selection &amp; Path Planning for KUKA LBR iiwa</h3>
+          <p>Choosing grasps that suit the task that follows, and planning collision-free motions for a collaborative robot arm.</p>
+          <div class="tags"><span>Robotics</span><span>Grasping</span><span>Motion planning</span></div>
+        </div>
+      </a>
+      <a class="card" href="projects.html#evasive" style="color:inherit;text-decoration:none">
+        <div class="thumb">
+          <svg viewBox="0 0 320 160" aria-hidden="true">
+            <rect x="0" y="40" width="320" height="80" fill="var(--line)" opacity=".55"/>
+            <line x1="0" y1="80" x2="320" y2="80" stroke="var(--surface)" stroke-width="3" stroke-dasharray="14 10"/>
+            <path d="M30 100 C120 100 140 60 230 60 L300 60" stroke="var(--accent)" stroke-width="3" fill="none" stroke-dasharray="6 5"/>
+            <rect x="18" y="91" width="34" height="18" rx="4" fill="var(--accent)"/>
+            <rect x="170" y="91" width="34" height="18" rx="4" fill="var(--muted)"/>
+            <rect x="260" y="51" width="34" height="18" rx="4" fill="var(--accent)" opacity=".35"/>
+          </svg>
+        </div>
+        <div class="body">
+          <div class="meta">Master's project · team of 4</div>
+          <h3>Evasive Maneuvers &amp; Path Planning for Automated Vehicles</h3>
+          <p>Collision avoidance and smooth lane changes, tested across 50+ simulated traffic scenarios.</p>
+          <div class="tags"><span>Python</span><span>Path planning</span><span>ML</span></div>
+        </div>
+      </a>
+    </div>
+    <p style="margin-top:20px"><a href="projects.html">All projects →</a></p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Dhruvil Katharotiya · Ingolstadt, Germany</span>
+      <span><a href="mailto:dhruvilkatharotiya01@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/dhruvil-kathrotiya" target="_blank" rel="noopener">LinkedIn</a></span>
+    </div>
+  </footer>
+</body>
+</html>
