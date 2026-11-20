@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="Times New Roman, serif">
+<rect width="600" height="340" fill="#fff"/>
+<rect x="40" y="70" width="530" height="190" fill="#f3f3f3" stroke="#333" stroke-width="1"/>
+<line x1="40" y1="165" x2="570" y2="165" stroke="#999" stroke-width="2" stroke-dasharray="16 12"/>
+<g stroke="#bbb" stroke-width="1.4" fill="none">
+<path d="M70 212 C210 212 250 125 390 120 L560 120"/><path d="M70 212 C230 212 270 112 410 112 L560 112"/><path d="M70 212 C190 212 240 132 370 128 L560 128"/></g>
+<path d="M70 212 C220 212 260 118 400 117 L560 117" stroke="#d62728" stroke-width="3.2" fill="none"/>
+<rect x="48" y="200" width="44" height="24" rx="4" fill="#1f3a93"/>
+<rect x="270" y="200" width="44" height="24" rx="4" fill="#555"/>
+<rect x="500" y="105" width="44" height="24" rx="4" fill="none" stroke="#1f3a93" stroke-width="2" stroke-dasharray="5 4"/>
+<g font-size="15" fill="#222"><text x="48" y="248">Ego</text><text x="262" y="248">Slow vehicle</text></g>
+<g font-size="14" fill="#222"><line x1="400" y1="30" x2="430" y2="30" stroke="#d62728" stroke-width="3"/><text x="436" y="35">Selected path</text>
+<line x1="400" y1="52" x2="430" y2="52" stroke="#bbb" stroke-width="2"/><text x="436" y="57">Candidates</text></g>
+<text x="40" y="300" font-size="15" fill="#222">x-position [m] →</text><text x="40" y="58" font-size="15" fill="#222">Cubic-spline lane change</text>
+</svg>

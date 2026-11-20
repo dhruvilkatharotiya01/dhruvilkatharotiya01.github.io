@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="Times New Roman, serif">
+<rect width="600" height="340" fill="#fff"/>
+<rect x="60" y="276" width="480" height="8" fill="#ccc"/>
+<rect x="120" y="248" width="80" height="28" rx="3" fill="#333"/>
+<path d="M160 248 L205 160 L320 128 L385 196" stroke="#555" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M160 248 L205 160 L320 128 L385 196" stroke="#e8e8e8" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="205" cy="160" r="11" fill="#333"/><circle cx="320" cy="128" r="11" fill="#333"/>
+<path d="M370 214 l15 -18 l15 18" stroke="#333" stroke-width="6" fill="none" stroke-linecap="round"/>
+<rect x="365" y="232" width="56" height="44" fill="#1f3a93" opacity=".85"/>
+<path d="M205 128 Q350 40 470 200" stroke="#d62728" stroke-width="3" fill="none" stroke-dasharray="8 6"/>
+<rect x="445" y="232" width="70" height="44" fill="none" stroke="#1f3a93" stroke-width="2" stroke-dasharray="6 5"/>
+<g font-size="14" fill="#222"><text x="352" y="304">Grasp</text><text x="448" y="304">Place / task</text><text x="380" y="70">Planned path</text></g>
+<text x="40" y="40" font-size="15" fill="#222">KUKA LBR iiwa · task-aware grasp</text>
+</svg>

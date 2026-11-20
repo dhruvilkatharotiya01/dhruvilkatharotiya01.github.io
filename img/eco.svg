@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="Times New Roman, serif">
+<rect width="600" height="340" fill="#fff"/>
+<g stroke="#e6e6e6"><line x1="70" y1="80" x2="560" y2="80"/><line x1="70" y1="140" x2="560" y2="140"/><line x1="70" y1="200" x2="560" y2="200"/></g>
+<line x1="70" y1="270" x2="560" y2="270" stroke="#333"/><line x1="70" y1="40" x2="70" y2="270" stroke="#333"/>
+<path d="M70 90 L230 90 L290 255 L340 255 L400 90 L520 90" stroke="#888" stroke-width="2.4" fill="none"/>
+<path d="M70 90 C200 90 250 150 320 150 C390 150 430 90 520 90" stroke="#d62728" stroke-width="3.2" fill="none"/>
+<rect x="525" y="60" width="26" height="70" rx="6" fill="#222"/><circle cx="538" cy="78" r="8" fill="#d62728"/><circle cx="538" cy="96" r="8" fill="#555"/><circle cx="538" cy="114" r="8" fill="#555"/>
+<g font-size="14" fill="#222"><line x1="330" y1="30" x2="360" y2="30" stroke="#888" stroke-width="2.4"/><text x="366" y="35">Stop-and-go</text>
+<line x1="330" y1="52" x2="360" y2="52" stroke="#d62728" stroke-width="3"/><text x="366" y="57">Eco-driving</text></g>
+<text x="70" y="300" font-size="15" fill="#222">Distance to signal →</text>
+<text x="22" y="200" font-size="15" fill="#222" transform="rotate(-90 22 200)">Speed</text>
+</svg>
