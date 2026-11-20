@@ -1,28 +1,32 @@
-// Light/dark toggle, remembered per visitor. Falls back to system preference.
-(function () {
-  var root = document.documentElement;
-  try {
-    var saved = localStorage.getItem("theme");
-    if (saved) root.setAttribute("data-theme", saved);
-  } catch (e) {}
+document.addEventListener("DOMContentLoaded", function () {
+  var header = document.querySelector("header.site");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var btn = document.querySelector(".theme-btn");
-    if (!btn) return;
-    function isDark() {
-      var t = root.getAttribute("data-theme");
-      if (t) return t === "dark";
-      return window.matchMedia("(prefers-color-scheme: dark)").matches;
-    }
-    function label() { btn.textContent = isDark() ? "☀" : "☾"; }
-    label();
-    btn.addEventListener("click", function () {
-      var next = isDark() ? "light" : "dark";
-      root.setAttribute("data-theme", next);
-      try { localStorage.setItem("theme", next); } catch (e) {}
-      label();
+  // Header turns into a dark bar once you scroll (like Google Sites)
+  function onScroll() { header.classList.toggle("scrolled", window.scrollY > 10); }
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Projects dropdown: hover on desktop, click/tap anywhere
+  document.querySelectorAll(".dd > button").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var dd = btn.parentElement;
+      var open = dd.classList.toggle("open");
+      btn.setAttribute("aria-expanded", open);
     });
-    var y = document.getElementById("year");
-    if (y) y.textContent = new Date().getFullYear();
   });
-})();
+  document.addEventListener("click", function () {
+    document.querySelectorAll(".dd.open").forEach(function (d) { d.classList.remove("open"); });
+  });
+
+  // Mobile hamburger
+  var mb = document.querySelector(".menu-btn");
+  if (mb) mb.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var open = header.classList.toggle("menu-open");
+    mb.setAttribute("aria-expanded", open);
+  });
+  document.querySelectorAll("nav.main a").forEach(function (a) {
+    a.addEventListener("click", function () { header.classList.remove("menu-open"); });
+  });
+});
